@@ -1,4 +1,4 @@
-[![English](https://img.shields.io/badge/English-blue.svg)](README.en.md)
+[![English](https://img.shields.io/badge/English-blue.svg)](README.md)
 [![Português](https://img.shields.io/badge/Português-green.svg)](README.ptbr.md)
 
 ![Status do Projeto](https://img.shields.io/badge/status-WIP-blue)
