@@ -18,3 +18,6 @@ def delete_s3_buckets():
         print(f'\nBucket {user_bucket_name} deletado com sucesso.')
     else:
         print('Este bucket não existe.')
+
+if __name__ == "__main__":
+    delete_s3_buckets()  

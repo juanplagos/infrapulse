@@ -1,4 +1,4 @@
-from scripts.s3_buckets.list_s3 import list_s3_buckets
+from scripts.s3_buckets.list_s3 import list_s3_buckets, print_s3_bucket_names
 from scripts.s3_buckets.delete_s3 import delete_s3_buckets
 
 def main():
@@ -8,7 +8,7 @@ def main():
         
         match user_input:
             case 1:
-                list_s3_buckets()
+                print_s3_bucket_names()
                 continue
             case 2:
                 delete_s3_buckets()
@@ -18,5 +18,7 @@ def main():
                 break 
             case _:
                 print('Opção inválida.')
-                continue    
-main()
+                continue
+
+if __name__ == "__main__" :
+    main()
