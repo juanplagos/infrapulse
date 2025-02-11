@@ -1,0 +1,35 @@
+Screen {
+    background: #1e1e2e; 
+    color: #cccccc;
+}
+
+Infrapulse {   
+    background: #1e1e2e;
+    height: 5;
+    margin: 1;
+    min-width: 50;
+    padding: 1;
+    align: center middle;
+}
+
+Static {
+    align: center middle;
+}
+
+/* Button {
+    
+}  */
+
+#list-s3-btn {
+    color: #FFFFFF;
+    background: #2d2d3b;
+    margin-right: 2;
+    width: 40;
+}
+
+#delete-s3-btn {
+    color: #FFFFFF;
+    background: #2d2d3b;
+    margin-left: 2;
+    width: 40;
+}
