@@ -1,14 +1,16 @@
 import os
 import boto3
 from dotenv import load_dotenv
-from scripts.s3_buckets.list_s3 import list_s3_buckets
+from rich.console import Console
+from rich.prompt import Prompt
+from scripts.s3_buckets.list_s3_buckets import list_s3_buckets
 
 load_dotenv()
 
 s3 = boto3.client('s3', endpoint_url=os.getenv('ENDPOINT_URL'))
 
 def delete_s3_buckets():
-    user_bucket_name = input("Digite o nome do bucket do S3 a ser deletado: ")
+    user_bucket_name = Prompt.ask('[bold]Digite o nome do bucket do s3 que deseja deletar[bold]')
 
     buckets_list = list_s3_buckets()
     
