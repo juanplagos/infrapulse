@@ -7,6 +7,11 @@ load_dotenv()
 s3 = boto3.client('s3', endpoint_url=os.getenv('ENDPOINT_URL'))
 
 def list_s3_buckets():
+    """Retrieves a list of all S3 buckets available.
+
+    :return: 
+        dict: a dictionary containing bucket details (Name, CreationDate, etc.)
+    """
     buckets_list = s3.list_buckets()
     return buckets_list
 

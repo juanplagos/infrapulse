@@ -8,15 +8,17 @@ from scripts.s3_buckets.delete_s3 import delete_s3_buckets
 
 console = Console()
 
-with open("styles/rich_styles.yaml", "r") as file:
+with open("resources/rich_styles.yaml", "r") as file:
     styles = yaml.safe_load(file)
 
-with open('utils/RICH_MARKDOWN_MENU.md') as readme:
+with open('resources/RICH_MARKDOWN_MENU.md') as readme:
     markdown = Markdown(readme.read())
 
 console.print(markdown)
 
 def main_menu():
+      """Main loop that displays the menu and handles user interaction
+      """
       while (True):
         console.print('\n[bold]1. Listar Buckets do S3 📋')
         console.print('[bold]2. Deletar um Bucket S3 :wastebasket:')
