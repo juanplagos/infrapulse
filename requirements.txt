@@ -9,7 +9,7 @@ chardet==5.2.0
 click==8.1.8
 colorama==0.4.6
 ConfigParser==7.1.0
-cryptography==44.0.0
+cryptography==44.0.1
 docutils==0.21.2
 filelock==3.17.0
 h2==4.2.0
