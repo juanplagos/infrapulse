@@ -13,23 +13,17 @@ Infrapulse {
 }
 
 Static {
-    align: center middle;
+    color: #FFFFFF;
+    text-align: center;
 }
 
-/* Button {
-    
-}  */
-
-#list-s3-btn {
+Button {
     color: #FFFFFF;
-    background: #2d2d3b;
-    margin-right: 2;
+    background:rgb(53, 57, 78);
+    margin-top: 2;
     width: 40;
-}
+} 
 
-#delete-s3-btn {
-    color: #FFFFFF;
-    background: #2d2d3b;
-    margin-left: 2;
-    width: 40;
+#s3-buckets-list {
+    text-align: center;
 }
