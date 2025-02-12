@@ -1,0 +1,8 @@
+button:
+  list_buckets: 'Listar Buckets do S3 🗒️'
+  delete_bucket: 'Deletar um Bucket do S3 🗑️'
+  exit: 'Sair 👋'
+  back: 'Voltar ⬅️'
+
+static:
+  main_header: '📊 Gerenciador de Recursos da AWS - Selecione uma operação:'
