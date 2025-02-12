@@ -8,7 +8,7 @@ load_dotenv()
 
 s3 = boto3.client('s3', endpoint_url=os.getenv('ENDPOINT_URL'))
 
-def delete_s3_buckets():
+def delete_s3_buckets() -> None:
     """Prompts the user for the name of a S3 Bucket. 
     If an existent bucket name is provided, deletes the bucket, 
     otherwise lets user know that the bucket does not exist.
