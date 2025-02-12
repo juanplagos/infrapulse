@@ -41,6 +41,6 @@ pip install -r requirements.txt
 3. Execute:
 
 ```python
-python main.py
+python app.py
 ```
 ---

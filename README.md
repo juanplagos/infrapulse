@@ -42,7 +42,7 @@ pip install -r requirements.txt
 3. Run:
 
 ```python
-python main.py
+python app.py
 ```
 
 ---
