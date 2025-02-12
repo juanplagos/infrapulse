@@ -3,7 +3,7 @@
 
 ![Status do Projeto](https://img.shields.io/badge/status-WIP-blue)
 
-🚧 Este projeto ainda está em desenvolvimento e pode mudar frequentemente. Pode conter bugs. É destinado apenas para fins de aprendizado e experimentação.
+🚧 Este projeto ainda está em desenvolvimento e pode mudar frequentemente. Contém bugs. É destinado apenas para fins de aprendizado e experimentação.
 
 💬 Feedbacks e contribuições são sempre bem-vindos! Sinta-se à vontade para abrir issues, fazer fork do projeto, enviar pull requests, etc. Toda ajuda é bem-vinda!
 
@@ -11,11 +11,12 @@
 
 # Infrapulse
 
-**Infrapulse** é uma coleção de scripts em Python que interagem com serviços AWS usando [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html), o SDK Python oficial da AWS. Este é um projeto de estudo com o objetivo de aprender e experimentar com o gerenciamento de recursos AWS via chamadas de API e melhorar meu conhecimento em Python.
+**Infrapulse** é uma coleção de scripts em Python que interagem com serviços AWS usando [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html), o SDK Python oficial da AWS. A aplicação possui uma Interface de Usuário em Texto (TUI) construída com [Textual](https://textual.textualize.io/), fornecendo um painel interativo baseado em terminal para gerenciamento de recursos AWS. Este é um projeto de estudo com o objetivo de aprender e experimentar com o gerenciamento de recursos AWS via chamadas de API, além de aprofundar meus conhecimentos em Python.
 
 ### Funcionalidades
 
 - Gerenciamento simples de recursos AWS com scripts Python
+- TUI desenvolvida com [Textual](https://textual.textualize.io/)
 - Utiliza `boto3` para interagir com serviços AWS
 - Ajuda na compreensão de automação e scripts AWS
 
