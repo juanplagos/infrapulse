@@ -1,10 +1,10 @@
 Screen {
-    background: #1e1e2e; 
-    color: #cccccc;
+    background:rgb(30, 30, 46); 
+    color:rgb(204, 204, 204);
 }
 
 Infrapulse {   
-    background: #1e1e2e;
+    background:rgb(30, 30, 46);
     height: 5;
     margin: 1;
     min-width: 50;
@@ -13,17 +13,26 @@ Infrapulse {
 }
 
 Static {
-    color: #FFFFFF;
+    color:rgba(255, 255, 255, 0.8);
     text-align: center;
+    border: round rgba(255, 255, 255, 0.8);
+}
+
+Button:focus {
+    text-style: none;
+}
+
+Button:hover {
+    color:rgb(255, 255, 255);
+    background: rgb(78, 89, 141);
+    margin-top: 2;
+    width: 40;
 }
 
 Button {
-    color: #FFFFFF;
+    text-style: none;
+    color:rgb(255, 255, 255);
     background:rgb(53, 57, 78);
     margin-top: 2;
     width: 40;
-} 
-
-#s3-buckets-list {
-    text-align: center;
 }
