@@ -3,6 +3,11 @@ button:
   delete_bucket: 'Deletar um Bucket do S3 🗑️'
   exit: 'Sair 👋'
   back: 'Voltar ⬅️'
+  reload: 'Recarregar 🔄'
+
+notification:
+  reloading: 'Recarregando...'
+  listing: 'Listando Buckets do S3...'
 
 static:
   main_header: '📊 Gerenciador de Recursos da AWS - Selecione uma operação:'
