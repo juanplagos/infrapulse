@@ -1,5 +1,5 @@
 from textual.app import ComposeResult
-from textual.containers import Vertical
+from textual.containers import Center
 from textual.widgets import Header, Button, Static
 from textual.screen import Screen
 import yaml
@@ -14,7 +14,8 @@ class S3BucketsListScreen(Screen):
 
     def compose(self) -> ComposeResult:
             yield Header()
-            with Vertical():
+            with Center():
                 for bucket in self.bucket_names:
                     yield Static(f'Nome: {bucket}')
                 yield Button(ptbr['button']['back'], id='back-btn')
+                yield Button(ptbr['button']['reload'], id='reload-btn')
