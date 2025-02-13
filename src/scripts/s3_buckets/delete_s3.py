@@ -2,7 +2,7 @@ import os
 import boto3
 from dotenv import load_dotenv
 from rich.prompt import Prompt
-from scripts.s3_buckets.list_s3_buckets import list_s3_buckets
+from src.scripts.s3_buckets.list_s3_buckets import list_s3_buckets
 
 load_dotenv()
 
