@@ -9,23 +9,23 @@ with open("resources/ptbr.yaml", "r") as f:
     ptbr = yaml.safe_load(f)
 
 class S3BucketsListScreen(Screen):
-    def _init_(self, bucket_names: list):
+    def _init_(self):
         super()._init_()
-        self.bucket_names = get_s3_bucket_names()
-
 
     def compose(self) -> ComposeResult:
-            yield Header()
-            with Center():
-                if not self.bucket_names:
-                     
-                     yield Static(ptbr['static']['no_buckets'])
-                     with Center():
-                        yield Button(ptbr['button']['back'], id='back-btn')
-                        yield Button(ptbr['button']['reload_list'], id='reload-list-btn')
-                else: 
-                    for bucket in self.bucket_names:
-                        yield Static(f'{bucket}')
-                    with Center():
-                        yield Button(ptbr['button']['back'], id='back-btn')
-                        yield Button(ptbr['button']['reload_list'], id='reload-list-btn')
+        self.bucket_names = get_s3_bucket_names()
+
+        yield Header()
+        with Center():
+            if not self.bucket_names:
+                 
+                 yield Static(ptbr['static']['no_buckets'])
+                 with Center():
+                    yield Button(ptbr['button']['back'], id='back-btn')
+                    yield Button(ptbr['button']['reload_list'], id='reload-list-btn')
+            else: 
+                for bucket in self.bucket_names:
+                    yield Static(f'{bucket}')
+                with Center():
+                    yield Button(ptbr['button']['back'], id='back-btn')
+                    yield Button(ptbr['button']['reload_list'], id='reload-list-btn')

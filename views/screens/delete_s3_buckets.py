@@ -9,24 +9,25 @@ with open("resources/ptbr.yaml", "r") as f:
     ptbr = yaml.safe_load(f)
 
 class S3BucketsDeleteScreen(Screen):
-    def _init_(self, bucket_names: list):
+    def _init_(self):
         super()._init_()
-        self.bucket_names = get_s3_bucket_names()
         
     def compose(self) -> ComposeResult:
-            yield Header()
-            with Center():
-                if not self.bucket_names:
-                     yield Static(ptbr['static']['no_buckets'])
-                     with Center():
-                        yield Button(ptbr['button']['back'], id='back-btn')
-                        yield Button(ptbr['button']['reload_delete_list'], id='reload-delete-list-btn')
-                else:     
-                    with Container(id='s3-buckets-buttons-container'):
-                                with Center():
-                                    for index, bucket in enumerate(self.bucket_names):
-                                        button_id = f"button_{index}_{bucket}"
-                                        yield Button(f'{bucket}', id=button_id, classes='s3-buckets-delete-buttons')
-                    with Center():
-                        yield Button(ptbr['button']['back'], id='back-btn')
-                        yield Button(ptbr['button']['reload_delete_list'], id='reload-delete-list-btn')
+        self.bucket_names = get_s3_bucket_names()
+
+        yield Header()
+        with Center():
+            if not self.bucket_names:
+                 yield Static(ptbr['static']['no_buckets'])
+                 with Center():
+                    yield Button(ptbr['button']['back'], id='back-btn')
+                    yield Button(ptbr['button']['reload_delete_list'], id='reload-delete-list-btn')
+            else:     
+                with Container(id='s3-buckets-buttons-container'):
+                            with Center():
+                                for index, bucket in enumerate(self.bucket_names):
+                                    button_id = f"button_{index}_{bucket}"
+                                    yield Button(f'{bucket}', id=button_id, classes='s3-buckets-delete-buttons')
+                with Center():
+                    yield Button(ptbr['button']['back'], id='back-btn')
+                    yield Button(ptbr['button']['reload_delete_list'], id='reload-delete-list-btn')
