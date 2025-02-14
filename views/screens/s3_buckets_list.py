@@ -2,6 +2,7 @@ from textual.app import ComposeResult
 from textual.containers import Center
 from textual.widgets import Header, Button, Static
 from textual.screen import Screen
+from src.scripts.s3_buckets.get_s3_buckets_names import get_s3_bucket_names
 import yaml
 
 with open("resources/ptbr.yaml", "r") as f:
@@ -10,12 +11,19 @@ with open("resources/ptbr.yaml", "r") as f:
 class S3BucketsListScreen(Screen):
     def __init__(self, bucket_names: list):
         super().__init__()
-        self.bucket_names = bucket_names
+        self.bucket_names = get_s3_bucket_names()
+
 
     def compose(self) -> ComposeResult:
             yield Header()
             with Center():
-                for bucket in self.bucket_names:
-                    yield Static(f'{bucket}')
-                yield Button(ptbr['button']['back'], id='back-btn')
-                yield Button(ptbr['button']['reload'], id='reload-btn')
+                if not self.bucket_names:
+                     yield Static(ptbr['static']['no_buckets'])
+                     yield Button(ptbr['button']['back'], id='back-btn')
+                     yield Button(ptbr['button']['reload_list'], id='reload-list-btn')
+                else: 
+                    for bucket in self.bucket_names:
+                        yield Static(f'{bucket}')
+                    with Center():
+                        yield Button(ptbr['button']['back'], id='back-btn')
+                        yield Button(ptbr['button']['reload_list'], id='reload-list-btn')
