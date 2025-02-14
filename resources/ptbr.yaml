@@ -4,6 +4,8 @@ button:
   exit: 'Sair 👋'
   back: 'Voltar ⬅️'
   reload: 'Recarregar 🔄'
+  reload_list: 'Recarregar Lista 🔄'
+  reload_delete_list: 'Recarregar Lista 🔄'
 
 notification:
   reloading: 'Recarregando...'
@@ -11,3 +13,4 @@ notification:
 
 static:
   main_header: '📊 Gerenciador de Recursos da AWS - Selecione uma operação:'
+  no_buckets: 'Não há buckets do S3 para serem listados...'
