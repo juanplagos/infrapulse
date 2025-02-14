@@ -4,7 +4,7 @@ from typing import Callable
 async def list_check(self, screen_name: Callable):
     names = get_s3_bucket_names()
 
-    if isinstance(names, list):
+    if names:
         self.bucket_names = names 
         self.push_screen(screen_name)
     else:

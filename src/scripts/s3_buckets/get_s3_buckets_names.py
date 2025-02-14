@@ -8,7 +8,7 @@ s3 = boto3.client('s3', endpoint_url=os.getenv('ENDPOINT_URL'))
 
 def get_s3_bucket_names() -> list:
     buckets_list = s3.list_buckets()
-    no_buckets = ['Não há buckets do S3 para listar.']
+    no_buckets = []
     bucket_names = [] 
 
     if not buckets_list['Buckets']:
