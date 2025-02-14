@@ -31,7 +31,7 @@
 1. Clone this repository:
 
 ```
-git clone https://github.com/your-username/infrapulse.git  
+git clone https://github.com/juanplagos/infrapulse.git  
 cd infrapulse
 ```
 
