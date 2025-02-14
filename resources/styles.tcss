@@ -36,3 +36,16 @@ Button {
     margin-top: 2;
     width: 40;
 }
+
+.delete-buckets-button {
+    text-style: none;
+    color: rgb(255, 255, 255);
+    background: rgb(53, 57, 78);
+    padding: 0 4;  
+    margin-left: 4;
+    margin-top: 1;
+    margin-bottom: 2;
+    width: 30;  
+    border: solid white; 
+
+}
