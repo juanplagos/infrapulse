@@ -16,6 +16,6 @@ class S3BucketsListScreen(Screen):
             yield Header()
             with Center():
                 for bucket in self.bucket_names:
-                    yield Static(f'Nome: {bucket}')
+                    yield Static(f'{bucket}')
                 yield Button(ptbr['button']['back'], id='back-btn')
                 yield Button(ptbr['button']['reload'], id='reload-btn')
