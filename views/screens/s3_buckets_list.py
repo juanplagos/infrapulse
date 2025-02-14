@@ -9,8 +9,8 @@ with open("resources/ptbr.yaml", "r") as f:
     ptbr = yaml.safe_load(f)
 
 class S3BucketsListScreen(Screen):
-    def __init__(self, bucket_names: list):
-        super().__init__()
+    def _init_(self, bucket_names: list):
+        super()._init_()
         self.bucket_names = get_s3_bucket_names()
 
 
@@ -18,9 +18,11 @@ class S3BucketsListScreen(Screen):
             yield Header()
             with Center():
                 if not self.bucket_names:
+                     
                      yield Static(ptbr['static']['no_buckets'])
-                     yield Button(ptbr['button']['back'], id='back-btn')
-                     yield Button(ptbr['button']['reload_list'], id='reload-list-btn')
+                     with Center():
+                        yield Button(ptbr['button']['back'], id='back-btn')
+                        yield Button(ptbr['button']['reload_list'], id='reload-list-btn')
                 else: 
                     for bucket in self.bucket_names:
                         yield Static(f'{bucket}')
