@@ -1,9 +1,9 @@
 from textual import on
 from textual.app import App
 from textual.widgets import Button
-from ui.screens.home import HomeScreen
-from ui.screens.s3_buckets_list import S3BucketsListScreen
-from ui.screens.delete_s3_buckets import S3BucketsDeleteScreen
+from views.screens.home import HomeScreen
+from views.screens.s3_buckets_list import S3BucketsListScreen
+from views.screens.delete_s3_buckets import S3BucketsDeleteScreen
 from utils.validate_s3_buckets_list import list_check
 from utils.reload_page import reload_page
 import yaml
