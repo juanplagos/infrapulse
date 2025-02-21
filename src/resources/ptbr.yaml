@@ -5,11 +5,12 @@ button:
   back: 'Voltar ⬅️'
   reload: 'Recarregar 🔄'
   reload_list: 'Recarregar Lista 🔄'
-  reload_delete_list: 'Recarregar Lista 🔄'
 
 notification:
   reloading: 'Recarregando...'
   listing: 'Listando Buckets do S3...'
+  error_listing_buckets: 'Erro ao listar buckets'
+  connection_error: 'Não foi possível conectar ao serviço da AWS. Verifique sua conexão de rede ou tente novamente mais tarde.'
 
 static:
   main_header: '📊 Gerenciador de Recursos da AWS - Selecione uma operação:'
