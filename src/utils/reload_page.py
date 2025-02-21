@@ -1,7 +1,6 @@
 from typing import Callable
 import yaml
 
-
 with open("resources/ptbr.yaml", "r") as f:
     ptbr = yaml.safe_load(f)
 
