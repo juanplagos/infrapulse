@@ -1,17 +1,11 @@
-# Ignore environment variables
 .env
-
-# Ignore python cache
 __pycache__/
 *.pyc
 *.pyo
-
-# Ignore IDE / Editor files
 .vscode/
 .idea/  
 *.swp
-
-# Ignore logs and temp files
 *.log
 *.tmp
 .DS_Store
+requirements.txt
