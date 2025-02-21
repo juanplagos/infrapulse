@@ -38,12 +38,6 @@ cd infrapulse
 2. Install dependencies:
 
 ```
-pip install -r requirements.txt
+pip install .
 ```
-3. Run:
-
-```python
-python app.py
-```
-
 ---

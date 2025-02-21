@@ -11,7 +11,7 @@
 
 # Infrapulse
 
-**Infrapulse** é uma coleção de scripts em Python que interagem com serviços AWS usando [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html), o SDK Python oficial da AWS. A aplicação possui uma Interface de Usuário em Texto (TUI) construída com [Textual](https://textual.textualize.io/), fornecendo um painel interativo baseado em terminal para gerenciamento de recursos AWS. Este é um projeto de estudo com o objetivo de aprender e experimentar com o gerenciamento de recursos AWS via chamadas de API, além de aprofundar meus conhecimentos em Python.
+**Infrapulse** é uma coleção de scripts em Python que interagem com serviços AWS usando [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html), o SDK Python oficial da AWS. A aplicação possui uma Interface de Usuário em Texto (TUI) construída com [Textual](https://textual.textualize.io/), fornecendo um painel interativo baseado em terminal para gerenciamento de recursos AWS. Este é um projeto de estudo com o objetivo de aprender e experimentar com o gerenciamento de recursos AWS via APIs, além de aprofundar meus conhecimentos em Python.
 
 ### Funcionalidades
 
@@ -36,12 +36,7 @@ cd infrapulse
 ```
 2. Instale as dependências:
 
-```
-pip install -r requirements.txt
-```
-3. Execute:
-
 ```python
-python app.py
+pip install .
 ```
 ---
