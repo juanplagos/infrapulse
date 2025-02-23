@@ -8,7 +8,7 @@ with open("resources/ptbr.yaml", "r") as f:
 async def list_check(self, screen_name: Callable) -> None:
     names = get_s3_bucket_names()
 
-    if names:
+    if names or names == []:
         self.bucket_names = names 
         self.push_screen(screen_name)
     else:
