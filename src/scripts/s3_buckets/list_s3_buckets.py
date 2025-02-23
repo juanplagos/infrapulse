@@ -9,9 +9,13 @@ s3 = boto3.client('s3', endpoint_url=os.getenv('ENDPOINT_URL'))
 def list_s3_buckets() -> dict:
     """Retrieves a list of all S3 buckets available.
 
-    :return: 
-        dict: a dictionary containing bucket details (Name, CreationDate, etc.)
-    """
+        Returns:
+            dict: Contains:
+            - Buckets (list): Each has Name (str), CreationDate (datetime), BucketRegion (str)
+            - Owner (dict): Has DisplayName and ID
+            - ContinuationToken (str): For pagination
+            - Prefix (str): Bucket name filter
+"""
     buckets_list = s3.list_buckets()
     return buckets_list
 
