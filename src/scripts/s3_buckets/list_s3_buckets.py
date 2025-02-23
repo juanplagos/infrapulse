@@ -15,7 +15,7 @@ def list_s3_buckets() -> dict:
             - Owner (dict): Has DisplayName and ID
             - ContinuationToken (str): For pagination
             - Prefix (str): Bucket name filter
-"""
+    """
     buckets_list = s3.list_buckets()
     return buckets_list
 
