@@ -3,7 +3,7 @@ import yaml
 import requests
 from dotenv import load_dotenv
 
-with open("resources/ptbr.yaml", "r") as f:
+with open('resources/ptbr.yaml', 'r') as f:
     ptbr = yaml.safe_load(f)
 
 def check_conn(self) -> None:
@@ -12,3 +12,6 @@ def check_conn(self) -> None:
         
     except requests.ConnectionError:
         self.notify(ptbr['notification']['connection_error'], severity='error', timeout=5.0)
+
+if __name__ == 'main':
+    check_conn()

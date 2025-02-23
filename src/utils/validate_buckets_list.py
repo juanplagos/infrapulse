@@ -2,7 +2,7 @@ from scripts.s3_buckets.get_s3_buckets_names import get_s3_bucket_names
 import yaml
 from typing import Callable
 
-with open("resources/ptbr.yaml", "r") as f:
+with open('resources/ptbr.yaml', 'r') as f:
     ptbr = yaml.safe_load(f)
 
 async def list_check(self, screen_name: Callable) -> None:

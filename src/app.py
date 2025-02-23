@@ -9,7 +9,7 @@ from utils.reload_page import reload_page
 from utils.test_endpoint_conn import check_conn
 import yaml
 
-with open("resources/ptbr.yaml", "r") as f:
+with open('resources/ptbr.yaml', 'r') as f:
     ptbr = yaml.safe_load(f)
 
 class Infrapulse(App):
@@ -38,17 +38,17 @@ class Infrapulse(App):
         self.push_screen(HomeScreen())
     
     @on(Button.Pressed, '#reload-list-btn')
-    def refresh_page(self) -> None:
-        reload_page(self, S3BucketsListScreen(self.bucket_names))
+    async def refresh_page(self) -> None: 
+        reload_page(self, S3BucketsListScreen())
 
     @on(Button.Pressed, '#reload-delete-list-btn')
     def refresh_page(self) -> None:
-        reload_page(self, S3BucketsDeleteScreen(self.bucket_names))
+        reload_page(self, S3BucketsDeleteScreen())
 
     @on(Button.Pressed, '#exit-btn')
     def exit_the_app(self) -> None:
         self.exit()
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app = Infrapulse()
     app.run()

@@ -5,7 +5,7 @@ from textual.screen import Screen
 from scripts.s3_buckets.get_s3_buckets_names import get_s3_bucket_names
 import yaml
 
-with open("resources/ptbr.yaml", "r") as f:
+with open('resources/ptbr.yaml', 'r') as f:
     ptbr = yaml.safe_load(f)
 
 class S3BucketsListScreen(Screen):
