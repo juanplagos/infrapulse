@@ -15,7 +15,7 @@ Infrapulse {
 Static {
     color:rgba(255, 255, 255, 0.8);
     text-align: center;
-    border: round rgba(255, 255, 255, 0.8);
+    margin-top: 2;
 }
 
 Button:focus {
@@ -51,4 +51,11 @@ Button {
     border: hkey white;
     width: auto;
     height: auto;
+}
+
+#main-header {
+    color:rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border: round rgba(255, 255, 255, 0.8);
+    margin-top: 0;
 }

@@ -10,7 +10,7 @@ with open("resources/ptbr.yaml", "r") as f:
 class HomeScreen(Screen):
     def compose(self) -> ComposeResult:
         yield Header(show_clock=True)
-        yield Static(ptbr['static']['main_header'])
+        yield Static(ptbr['static']['main_header'], id='main-header')
         yield Center(
             Button(ptbr['button']['list_buckets'], id="list-s3-btn"),
             Button(ptbr['button']['delete_bucket'], id='delete-s3-btn'),
