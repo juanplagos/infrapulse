@@ -32,12 +32,16 @@
 
 ```
 git clone https://github.com/juanplagos/infrapulse.git  
-cd infrapulse
+cd infrapulse/src
 ```
-
 2. Install dependencies:
 
 ```
 pip install .
+```
+3. Run:
+
+```python
+python app.py
 ```
 ---
