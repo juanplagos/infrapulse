@@ -1,10 +1,11 @@
 button:
-  list_buckets: 'Listar Buckets do S3 🗒️'
-  delete_bucket: 'Deletar um Bucket do S3 🗑️'
+  list_buckets_menu_opt: 'Listar Buckets do S3 🗒️'
+  delete_buckets_menu_opt: 'Deletar um Bucket do S3 🗑️'
   exit: 'Sair 👋'
   back: 'Voltar ⬅️'
   reload: 'Recarregar 🔄'
   reload_list: 'Recarregar Lista 🔄'
+  delete_bucket: 'Deletar Bucket'
 
 notification:
   reloading: 'Recarregando...'
@@ -15,3 +16,6 @@ notification:
 static:
   main_header: '📊 Gerenciador de Recursos da AWS - Selecione uma operação:'
   no_buckets: 'Não há buckets do S3 para serem listados...'
+
+input:
+  delete_buckets_prompt: 'Digite o nome do bucket que deseja deletar'
