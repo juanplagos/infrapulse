@@ -38,15 +38,6 @@ Button {
     width: 40;
 }
 
-.s3-buckets-delete-buttons {
-    text-style: none;
-    color: rgb(255, 255, 255);
-    background: rgb(53, 57, 78);  
-    margin-top: 2;
-    margin-bottom: 2;
-    width: 30;   
-}
-
 #s3-buckets-buttons-container {
     border: hkey white;
     width: auto;
