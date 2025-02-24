@@ -7,6 +7,7 @@ from views.delete_s3_buckets import S3BucketsDeleteScreen
 from utils.validate_buckets_list import list_check
 from utils.reload_page import reload_page
 from utils.test_endpoint_conn import check_conn
+from scripts.s3_buckets.delete_s3_buckets import delete_s3_buckets
 import yaml
 
 with open('resources/ptbr.yaml', 'r') as f:
@@ -44,6 +45,10 @@ class Infrapulse(App):
     @on(Button.Pressed, '#reload-delete-list-btn')
     def refresh_delete_page(self) -> None:
         reload_page(self, S3BucketsDeleteScreen())
+
+    @on(Button.Pressed, '#delete-bucket-btn')
+    def delete_buckets(self) -> None:
+        delete_s3_buckets(self)
 
     @on(Button.Pressed, '#exit-btn')
     def exit_the_app(self) -> None:
