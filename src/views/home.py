@@ -12,8 +12,8 @@ class HomeScreen(Screen):
         yield Header(show_clock=True)
         yield Static(ptbr['static']['main_header'], id='main-header')
         yield Center(
-            Button(ptbr['button']['list_buckets'], id='list-s3-btn'),
-            Button(ptbr['button']['delete_bucket'], id='delete-s3-btn'),
+            Button(ptbr['button']['list_buckets_menu_opt'], id='list-s3-btn'),
+            Button(ptbr['button']['delete_buckets_menu_opt'], id='delete-s3-btn'),
             Button(ptbr['button']['exit'], id='exit-btn')
         )
         yield Footer()
