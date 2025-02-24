@@ -38,11 +38,11 @@ class Infrapulse(App):
         self.push_screen(HomeScreen())
     
     @on(Button.Pressed, '#reload-list-btn')
-    async def refresh_page(self) -> None: 
+    def refresh_list_page(self) -> None: 
         reload_page(self, S3BucketsListScreen())
 
     @on(Button.Pressed, '#reload-delete-list-btn')
-    def refresh_page(self) -> None:
+    def refresh_delete_page(self) -> None:
         reload_page(self, S3BucketsDeleteScreen())
 
     @on(Button.Pressed, '#exit-btn')
