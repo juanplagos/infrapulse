@@ -32,11 +32,14 @@
 
 ```
 git clone https://github.com/juanplagos/infrapulse.git
-cd infrapulse/src
+cd infrapulse
 ```
-2. Instale as dependências:
+2. Crie um ambiente virtual e instale as dependências:
 
-```python
+```
+python -m venv venv
+source venv/bin/activate
+cd src
 pip install .
 ```
 3. Execute:
