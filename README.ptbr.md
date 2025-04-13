@@ -39,12 +39,12 @@ cd infrapulse
 ```
 python -m venv venv
 source venv/bin/activate
-cd src
 pip install .
 ```
 3. Execute:
 
 ```python
+cd src
 python app.py
 ```
 ---
