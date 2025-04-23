@@ -1,4 +1,4 @@
-from scripts.s3_buckets.get_s3_buckets_names import get_s3_bucket_names
+from utils.get_s3_buckets_names import get_s3_bucket_names
 import yaml
 from typing import Callable
 
