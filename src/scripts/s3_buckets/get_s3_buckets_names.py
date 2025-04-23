@@ -1,10 +1,11 @@
 import os
 import boto3
 from dotenv import load_dotenv
+from utils.aws_clients import get_s3_client
 
 load_dotenv()
 
-s3 = boto3.client('s3', endpoint_url=os.getenv('ENDPOINT_URL'))
+s3 = get_s3_client()
 
 def get_s3_bucket_names() -> list:
     buckets_list = s3.list_buckets()
