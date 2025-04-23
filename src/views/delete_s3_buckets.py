@@ -20,8 +20,8 @@ class S3BucketsDeleteScreen(Screen):
             if not self.bucket_names:
                  yield Static(ptbr['static']['no_buckets'])
                  with Center():
-                    yield Button(ptbr['button']['back'], id='back-btn')
                     yield Button(ptbr['button']['reload_list'], id='reload-delete-list-btn')
+                    yield Button(ptbr['button']['back'], id='back-btn')
             else:     
                 with Container(id='s3-buckets-static-container'):
                             with Center():
@@ -32,5 +32,5 @@ class S3BucketsDeleteScreen(Screen):
                     yield Input(placeholder=ptbr['input']['delete_buckets_prompt'], id='user_bucket_name')
                     with Center():
                         yield Button(ptbr['button']['delete_bucket'], id='delete-bucket-btn')
-                        yield Button(ptbr['button']['back'], id='back-btn')
                         yield Button(ptbr['button']['reload_list'], id='reload-delete-list-btn')
+                        yield Button(ptbr['button']['back'], id='back-btn')
