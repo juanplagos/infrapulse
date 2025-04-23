@@ -6,7 +6,7 @@ from views.s3_buckets_list import S3BucketsListScreen
 from views.delete_s3_buckets import S3BucketsDeleteScreen
 from utils.validate_buckets_list import list_check
 from utils.reload_page import reload_page
-from utils.test_endpoint_conn import check_conn
+from utils.check_endpoint_conn import check_conn
 from scripts.s3_buckets.delete_s3_buckets import delete_s3_buckets
 import yaml
 
