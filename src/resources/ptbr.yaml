@@ -1,4 +1,6 @@
 button:
+  main_menu_s3_buckets_btn: 'S3'
+  main_menu_ec2_instances_btn: 'EC2'
   list_buckets_menu_opt: 'Listar Buckets do S3 🗒️'
   delete_buckets_menu_opt: 'Deletar um Bucket do S3 🗑️'
   exit: 'Sair 👋'
