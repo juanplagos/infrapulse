@@ -21,7 +21,7 @@ class S3BucketsDeleteScreen(Screen):
                  yield Static(ptbr['static']['no_buckets'])
                  with Center():
                     yield Button(ptbr['button']['reload_list'], id='reload-delete-list-btn')
-                    yield Button(ptbr['button']['back'], id='back-btn')
+                    yield Button(ptbr['button']['back'], id='s3-screen-back-btn')
             else:     
                 with Container(id='s3-buckets-static-container'):
                             with Center():
@@ -33,4 +33,4 @@ class S3BucketsDeleteScreen(Screen):
                     with Center():
                         yield Button(ptbr['button']['delete_bucket'], id='delete-bucket-btn')
                         yield Button(ptbr['button']['reload_list'], id='reload-delete-list-btn')
-                        yield Button(ptbr['button']['back'], id='back-btn')
+                        yield Button(ptbr['button']['back'], id='s3-screen-back-btn')

@@ -22,10 +22,10 @@ class S3BucketsListScreen(Screen):
                  yield Static(ptbr['static']['no_buckets'])
                  with Center():
                     yield Button(ptbr['button']['reload_list'], id='reload-list-btn')
-                    yield Button(ptbr['button']['back'], id='back-btn')
+                    yield Button(ptbr['button']['back'], id='s3-screen-back-btn')
             else: 
                 for bucket in self.bucket_names:
                     yield Static(f'{bucket}')
                 with Center():
                     yield Button(ptbr['button']['reload_list'], id='reload-list-btn')
-                    yield Button(ptbr['button']['back'], id='back-btn')
+                    yield Button(ptbr['button']['back'], id='s3-screen-back-btn')

@@ -38,9 +38,13 @@ class Infrapulse(App):
     @on(Button.Pressed, '#delete-s3-btn')
     async def delete_s3_buckets(self) -> None:
         await list_check(self, S3BucketsDeleteScreen(self.bucket_names))
+        
+    @on(Button.Pressed, '#s3-screen-back-btn')
+    async def navigate_back_s3_screen(self) -> None:
+        self.push_screen(S3Screen())
 
     @on(Button.Pressed, '#back-btn')
-    async def navigate_back(self) -> None:
+    async def navigate_back_home_screen(self) -> None:
         self.push_screen(HomeScreen())
     
     @on(Button.Pressed, '#reload-list-btn')
