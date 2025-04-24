@@ -4,6 +4,7 @@ from textual.widgets import Button
 from views.home import HomeScreen
 from views.s3_buckets_list import S3BucketsListScreen
 from views.delete_s3_buckets import S3BucketsDeleteScreen
+from views.s3 import S3Screen
 from utils.validate_buckets_list import list_check
 from utils.reload_page import reload_page
 from utils.check_endpoint_conn import check_conn
@@ -24,6 +25,10 @@ class Infrapulse(App):
     def on_mount(self) -> None:
         check_conn(self)
         self.push_screen(HomeScreen())
+
+    @on(Button.Pressed, '#main-menu-s3-buckets-btn')
+    async def s3_screen(self) -> None:
+        self.push_screen(S3Screen())
 
     @on(Button.Pressed, '#list-s3-btn')
     async def list_s3_buckets(self) -> None:
