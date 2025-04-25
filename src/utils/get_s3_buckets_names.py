@@ -1,5 +1,3 @@
-import os
-import boto3
 from dotenv import load_dotenv
 from utils.aws_clients import get_client
 

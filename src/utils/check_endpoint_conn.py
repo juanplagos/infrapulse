@@ -1,7 +1,6 @@
 import os
 import yaml
 import requests
-from dotenv import load_dotenv
 
 with open('resources/ptbr.yaml', 'r') as f:
     ptbr = yaml.safe_load(f)

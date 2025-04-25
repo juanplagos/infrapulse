@@ -1,5 +1,3 @@
-import os
-import boto3
 from utils.aws_clients import get_client
 
 ec2 = get_client('ec2')
