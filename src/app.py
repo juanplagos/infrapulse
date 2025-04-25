@@ -8,7 +8,7 @@ from views.s3 import S3Screen
 from utils.validate_buckets_list import list_check
 from utils.reload_page import reload_page
 from utils.check_endpoint_conn import check_conn
-from scripts.s3_buckets.delete_s3_buckets import delete_s3_buckets
+from scripts.s3.delete_s3_buckets import delete_s3_buckets
 import yaml
 
 with open('resources/ptbr.yaml', 'r') as f:

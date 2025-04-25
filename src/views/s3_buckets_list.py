@@ -2,7 +2,7 @@ from textual.app import ComposeResult
 from textual.containers import Center
 from textual.widgets import Header, Button, Static
 from textual.screen import Screen
-from scripts.s3_buckets.get_s3_buckets_names import get_s3_bucket_names
+from scripts.s3.get_s3_buckets_names import get_s3_bucket_names
 import yaml
 
 with open('resources/ptbr.yaml', 'r') as f:
