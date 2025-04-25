@@ -8,16 +8,8 @@ load_dotenv()
 s3 = get_s3_client()
 
 def get_s3_bucket_names() -> list:
-    buckets_list = s3.list_buckets()
-    no_buckets = []
-    bucket_names = [] 
-
-    if not buckets_list['Buckets']:
-        return no_buckets
-    else:  
-        for bucket in buckets_list['Buckets']:
-            bucket_names.append(bucket["Name"])
-    return bucket_names
+    buckets = s3.list_buckets().get('Buckets', [])
+    return [bucket['Name'] for bucket in buckets]
 
 if __name__ == "__main__":  
     get_s3_bucket_names() 
