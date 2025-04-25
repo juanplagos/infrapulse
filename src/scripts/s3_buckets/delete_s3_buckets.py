@@ -2,11 +2,11 @@ import os
 import boto3
 from dotenv import load_dotenv
 from scripts.s3_buckets.list_s3_buckets import list_s3_buckets
-from utils.aws_clients import get_s3_client
+from utils.aws_clients import get_client
 
 load_dotenv()
 
-s3 = get_s3_client()
+s3 = get_client('s3')
 
 # Deletes empty s3 buckets
 def delete_s3_buckets(self) -> None:

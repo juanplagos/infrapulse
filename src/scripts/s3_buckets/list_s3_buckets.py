@@ -1,11 +1,11 @@
 import os
 import boto3
 from dotenv import load_dotenv
-from utils.aws_clients import get_s3_client
+from utils.aws_clients import get_client
 
 load_dotenv()
 
-s3 = get_s3_client()
+s3 = get_client('s3')
 
 def list_s3_buckets() -> dict:
     """Retrieves a list of all S3 buckets available.
