@@ -1,5 +1,14 @@
-def running_ec2_instances():
-    pass
+import os
+import boto3
+from utils.aws_clients import get_client
+
+ec2 = get_client('ec2')
+
+def ec2_instances():
+    """
+    
+    """
+    ec2.describe_instances()
 
 if __name__ == "__main__":
-    running_ec2_instances()
+    ec2_instances()

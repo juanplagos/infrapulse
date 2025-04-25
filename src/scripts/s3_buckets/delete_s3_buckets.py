@@ -1,7 +1,6 @@
 import os
 import boto3
 from dotenv import load_dotenv
-from scripts.s3_buckets.list_s3_buckets import list_s3_buckets
 from utils.aws_clients import get_client
 
 load_dotenv()
