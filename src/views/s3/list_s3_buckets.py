@@ -10,7 +10,7 @@ with open('resources/ptbr.yaml', 'r') as f:
 
 class S3BucketsListScreen(Screen):
     def _init_(self):
-        super()._init_()
+        super().__init__()
 
     def compose(self) -> ComposeResult:
         self.bucket_names = get_s3_bucket_names()
