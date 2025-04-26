@@ -17,7 +17,7 @@ notification:
   connection_error: 'Não foi possível conectar ao serviço da AWS. Verifique sua conexão de rede ou tente novamente mais tarde.'
 
 static:
-  main_header: '📊 Gerenciador de Recursos da AWS - Selecione uma operação:'
+  main_header: '📊 Selecione uma operação para gerenciar seus recursos AWS ☁️'
   no_buckets: 'Não há buckets do S3 para serem listados...'
 
 input:
