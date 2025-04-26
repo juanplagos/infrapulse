@@ -3,6 +3,7 @@ button:
   main_menu_ec2_instances_btn: 'EC2'
   list_buckets_menu_opt: 'Listar Buckets do S3 🗒️'
   delete_buckets_menu_opt: 'Deletar um Bucket do S3 🗑️'
+  ec2_instance_summary_menu_opt: 'Visão Geral das Instâncias 🌐'
   exit: 'Sair 👋'
   back: 'Voltar ⬅️'
   reload: 'Recarregar 🔄'
@@ -21,3 +22,4 @@ static:
 
 input:
   delete_buckets_prompt: 'Digite o nome do bucket que deseja deletar'
+  ec2_instance_id_prompt: 'ID da instância EC2'
